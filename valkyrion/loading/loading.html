@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			background-image: url('bg.jpg');
+			background-repeat: no-repeat;
+			background-position: top center;
+			font-family: Helvetica, sans-serif;
+		}
+		h1 {
+			color: #000;
+			margin: 20px auto;
+			text-align: center;
+			font-family: Impact, sans-serif;
+			font-size: 60px;
+		}
+		.box {
+			width: 400px;
+			margin: 20px auto;
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 8px;
+			padding: 10px;
+		}
+		.box h3 {
+			padding: 0;
+			margin: 6px 0;
+		}
+		.box ul {
+			padding-left: 0;
+		}
+		.box li {
+			margin: 5px 0;
+		}
+		#details {
+			width: 400px;
+			margin: 20px auto;
+			display: none;
+		}
+		#details span {
+			font-weight: bold;
+			color: green;
+		}
+	</style>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+
+<h1>Valkyrion Gaming - TTT</h1>
+
+
+<div class="box rules">
+	<h3>Rules</h3>
+	<ol>
+		<li>Don't be a dick</li>
+		<li>Don't RDM or grief</li>
+		<li>No room claiming</li>
+		<li>Abrams Trek is not real Star Trek</li>
+	</ol>
+</div>
+
+
+<div id="details">
+	Current Map: <span id="mapname"></span> &nbsp; Max Players: <span id="maxplayers"></span>
+</div>
+
+
+<script type="text/javascript">
+	function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode ) {
+		$('#mapname').html(mapname);
+		$('#maxplayers').html(maxplayers);
+		$('#details').css('display', 'block');
+	}
+</script
+
+
+</body>
+</html>
